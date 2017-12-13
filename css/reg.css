@@ -9,6 +9,7 @@ body{
 	font-size:10px;
 	font-size:.875rem;
 	font-size:62.5%;
+	background: #eff0f4;
 }
 .clearfix:after{
 	content:".";
@@ -20,7 +21,7 @@ body{
 }
 .wrap{
 	width: 100%;
-	background: #eff0f4;
+	overflow: hidden;
 }
 .head{
 	height: 2.8rem;
@@ -62,6 +63,7 @@ body{
 	font-size: 1rem;
 	color: #fff;
 	width: 100%;
+	cursor: pointer;
 }
 .reg-txt{
 	float: right;
@@ -89,9 +91,5 @@ body{
 	background:url(../images/icon_pwd.png) no-repeat;
 	background-size: 3.5rem;
 	margin-bottom:.6rem;
-<<<<<<< HEAD
 	background-color: #fff;
 }
-=======
-}
->>>>>>> d162c78a45d7db52d463b21e3569dbaa6fc123e4
