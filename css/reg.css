@@ -72,7 +72,6 @@ body{
 	font-size: 0.8rem;
 }
 .pw,.num{
-	background-color: #fff;
 	width: 100%;
 	padding-left: 4rem;
 	margin: .5rem 0 0 0;
@@ -83,9 +82,11 @@ body{
 .num{
 	background:url(../images/icon_mobile.png) no-repeat;
 	background-size: 3.5rem;
+	background-color: #fff;
 }
 .pw{
 	background:url(../images/icon_pwd.png) no-repeat;
 	background-size: 3.5rem;
 	margin-bottom:.6rem;
+	background-color: #fff;
 }
