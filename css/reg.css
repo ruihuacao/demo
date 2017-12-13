@@ -79,13 +79,19 @@ body{
 	font-size: .8rem;
 }
 .num{
+	background-color: #fff;
 	background:url(../images/icon_mobile.png) no-repeat;
 	background-size: 3.5rem;
 	background-color: #fff;
 }
 .pw{
+	background-color: #fff;
 	background:url(../images/icon_pwd.png) no-repeat;
 	background-size: 3.5rem;
 	margin-bottom:.6rem;
+<<<<<<< HEAD
 	background-color: #fff;
 }
+=======
+}
+>>>>>>> d162c78a45d7db52d463b21e3569dbaa6fc123e4
