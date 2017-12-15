@@ -23,12 +23,21 @@ body{
 }
 .wrap{
 	width: 100%;
-	overflow: hidden;
+	height: auto;
+	overflow: auto;
 }
 .head{
 	background-color: #5fc0cd;
 	color: #fff;
 	line-height: 2.8rem;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 99;
+}
+.main{
+	margin-bottom:7rem;
 }
 .key{
 	float: left;
@@ -66,7 +75,6 @@ body{
 	width: 100%;
 }
 .hd-int-box{
-	width: 100%;
 	position: absolute;
 	top: 50%;
 	transform:translateY(-50%);
@@ -135,6 +143,7 @@ body{
 	left: 0;
 	right: 0;
 	z-index: 99;
+	background-color: #fff;
 }
 .btn-word,.btn-phone{
 	flex: 1;
