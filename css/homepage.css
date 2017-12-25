@@ -37,7 +37,7 @@ body{
 	z-index: 99;
 }
 .main{
-	margin-bottom:7rem;
+	margin:2.7rem 0 7rem 0;
 }
 .key{
 	float: left;
