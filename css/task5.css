@@ -26,7 +26,7 @@ body{
 	width: 100%;
 	min-width: 320px;
 	height: auto;
-	overflow: auto;
+	overflow: hidden;
 }
 .head{
 	background-color: #5ec0ce;
@@ -71,25 +71,20 @@ body{
 }
 .main{
 	width: 95%;
-	margin: 3.5rem auto;
-}
-.ddl li{
-	width: 33.3%;
-	float: left;
-	color: #bbb;
-	text-align: center;
-	position: relative;
+	margin: 6.2rem auto;
 }
 .ddl_title{
-	font-size: 1rem;
-	line-height: 2rem;
+	color: #bbb;
+	background: #fff;
+	position: relative;
 }
-.triangle_up{
-	border: 5px solid;
+.caret{
 	position: absolute;
-	top: 48%;
+	top: 50%;
 	right: 0;
-	border-color: #bbb transparent transparent  transparent;
+	transform: translateY(-50%);
+	color: #bbb;
+	margin: 0 5px;
 }
 .content li{
 	margin: 1.6rem 0;
@@ -128,7 +123,6 @@ body{
 	right: 0;
 	bottom: 0;
 	z-index: 99;
-	margin-top: 3rem;
 	min-width: 300px;
 	height: 5rem;
 }
