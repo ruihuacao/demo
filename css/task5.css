@@ -38,10 +38,9 @@ body{
 	line-height: 1rem;
 	min-width: 300px;
 }
-.table{
+.table_task{
 	font-size: 0;
 	text-align: center;
-	margin:0 3rem;
 	padding: .5rem 0;
 	position: relative;
 }
@@ -71,7 +70,7 @@ body{
 }
 .main{
 	width: 95%;
-	margin: 6.2rem auto;
+	margin: 4rem auto;
 }
 .ddl_title{
 	color: #bbb;
