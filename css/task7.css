@@ -11,6 +11,9 @@ body{
 	font-size:.875rem;
 	font-size:62.5%;
 }
+a:active,a:link{
+	text-decoration: none!important;
+}
 .index_bg{
 	background-color: #f0f0f0 !important;
 }
@@ -55,10 +58,10 @@ body{
 	position: absolute;
 	top: 50%;
 	transform: translateY(-50%);
-	right: 1.2rem;
+	right: .6rem;
 }
 .his_title{
-	font-size: 2.4rem;
+	font-size: 2.3rem;
 	color: #999;
 	text-align: center;
 	padding: 2.1rem 0;
@@ -98,9 +101,9 @@ body{
 }
 .cont_fx{
 	display: block;
-	width: 2.1rem;
+	width: 2rem;
 	position: absolute;
-	right: .7rem;
+	right: .3rem;
 	top: 50%;
 	transform: translateY(-50%);
 }
