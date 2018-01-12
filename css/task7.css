@@ -100,10 +100,10 @@ a:active,a:link{
 	text-align: center;
 }
 .cont_fx{
-	display: block;
-	width: 2rem;
+	border: 23px solid;
+	border-color: transparent transparent transparent #fbb453;
 	position: absolute;
-	right: .3rem;
+	right: -1.4rem;
 	top: 50%;
 	transform: translateY(-50%);
 }
@@ -119,10 +119,12 @@ a:active,a:link{
 	border: 1px solid #69d1ea;
 	border-radius: 100%;
 	margin: 0 .4rem .6rem 0.4rem;
+	cursor: pointer;
 }
-.round{
+.select_ico span:hover{
 	background: #69d1ea;
 }
+
 /*vote*/
 .head_box{
 	padding:1.8rem 0; 
