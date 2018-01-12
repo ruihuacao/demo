@@ -1,0 +1,386 @@
+*:focus {outline: none !important;} 
+*{
+	margin: 0; 
+	padding: 0;	
+}
+ul, li, ol{
+	list-style:none;
+}
+body{
+	font-size:10px;
+	font-size:.875rem;
+	font-size:62.5%;
+}
+.index_bg{
+	background-color: #f0f0f0 !important;
+}
+.clearfix:after{
+	content:".";
+	display:block;
+	clear:both;
+	font-size:0;
+	height:0;
+	visibility:hidden;
+}
+.wrap{
+	width: 100%;
+	min-width: 320px;
+	height: auto;
+	overflow: hidden;
+}
+/*index*/
+.index_head{
+	width: 100%;
+	background: #2bbde0;
+}
+.ind_head_img{
+	width: 2rem;
+	padding: 1.4rem 0;
+	margin-left: 2rem;
+}
+.index_main{
+	width: 90%;
+	margin:0 auto;
+	padding-bottom: 6rem;
+}
+.history{
+	width: 100%;
+	border: 1px solid #d4d4d4;
+	margin: 1.6rem auto;
+	background: #fff;
+	position: relative;
+}
+.his_img_yy{
+	width: 1.7rem;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	right: 1.2rem;
+}
+.his_title{
+	font-size: 2.4rem;
+	color: #999;
+	text-align: center;
+	padding: 2.1rem 0;
+	margin: 0 !important;
+}
+.content{
+	width: 100%;
+	border: 1px solid #d4d4d4;
+	background: #fff;
+	position: relative;
+}
+.cont_title{
+	text-align: center;
+	font-size: 2.4rem;
+	padding: 1.2rem 0;
+	color: #fbb436;
+	border-bottom: 1px solid #fbdc9e;
+}
+.select{
+	margin-top:1.6rem; 
+	text-align: center;
+}
+.select_title{
+	width: 78%;
+	margin: 0 auto !important;
+	background: #69d1ea;
+	color: #fff;
+	font-size: 2.4rem;
+	padding: 1.8rem 0;
+}
+.select_txt{
+	font-size: 1.6rem;
+	color: #999;
+	padding: 1.2rem 0;
+	margin: 0 !important;
+	text-align: center;
+}
+.cont_fx{
+	display: block;
+	width: 2.1rem;
+	position: absolute;
+	right: .7rem;
+	top: 50%;
+	transform: translateY(-50%);
+}
+.select_ico{
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+}
+.select_ico span{
+	display: inline-block;
+	width: 12px;
+	height: 12px;
+	border: 1px solid #69d1ea;
+	border-radius: 100%;
+	margin: 0 .4rem .6rem 0.4rem;
+}
+.round{
+	background: #69d1ea;
+}
+/*vote*/
+.head_box{
+	padding:1.8rem 0; 
+}
+.vote_head{
+	position: relative;
+	padding: 3rem 0 .6rem 0;
+}
+.head_text{
+	font-size: 2.3rem;
+	color: #fff;
+	text-align: center;
+	margin: 0 4rem;
+}
+.head_left{
+	display: inline-block;
+	width: 2rem;
+	position: absolute;
+	left: 2rem;
+}
+.head_right{
+	display: inline-block;
+	width: 2rem;
+	position: absolute;
+	right: 2rem;
+}
+.audio_box{
+	background:#b9e9f5;
+	position: relative;
+}
+.audio_text{
+	font-size: 1.7rem;
+	color: #333;
+	padding: 1.4rem 2.3rem;
+	margin: 0;
+}
+.audio{
+	width: 8rem;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	right: -3rem;
+	z-index: 99;
+	opacity: 0;
+	overflow: hidden;
+}
+.audio_ico{
+	width: 3.5rem;
+	position: absolute;
+	right: 1.5rem;
+	top: 50%;
+	transform: translateY(-50%);
+	z-index: 6;
+}
+.fx_ico{
+	margin-left: 4rem;
+	display: inline-block;
+	border: 8px solid;
+	border-color: #b9e9f5 transparent transparent transparent;
+}
+.cue{
+	color: #fff;
+	font-size: 1.5rem;
+	padding-left: 4rem;
+}
+.container{
+	margin-bottom: 12rem;
+	overflow-y:scroll;
+	max-height: 500px;
+	min-height: 220px;
+	overflow:auto;
+}
+/*定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸*/  
+.container::-webkit-scrollbar{  
+    width: 6px;  
+    height: 6px;  
+}  
+  /*定义滚动条轨道 内阴影+圆角*/  
+.container::-webkit-scrollbar-track{  
+    -webkit-box-shadow: inset 0 0 6px rgba(68,145,180,0.3);  
+    border-radius: 5px;  
+    background-color: #4ca1c8;  
+}  
+/*定义滑块 内阴影+圆角*/  
+.container::-webkit-scrollbar-thumb{  
+    border-radius: 5px;  
+    -webkit-box-shadow: inset 0 0 6px rgba(255,255,255);  
+    background-color: #fff;  
+} 
+.vote_border{
+	border: 4px solid #fff;
+	max-width: 135px;
+	cursor: pointer;
+}
+.vote_border p{
+	margin: 0;
+	white-space:nowrap;
+	text-align: center;
+}
+.vote_status{
+	color: #666;
+	font-size: 2.2rem;
+	padding: 2.6rem 0;
+	background: #f4c97b;
+}
+.vote_row{
+	font-size: 1.8rem;
+	color: #fff;
+	background: #83b09b;
+}
+.col-xs-4{
+	font-size: 0;
+}
+.center_box{
+	max-width: 135px;
+	padding-top: 1rem;
+	margin: 0 auto;
+}
+.col-xs-4:hover .hover_ico_box{
+	opacity: 1;
+}
+.hover_ico_box{
+	opacity: 0;
+	padding: 1.5rem 0;
+}
+.hover_ico{
+	width: 20%;
+	max-width: 28px;
+}
+.hover_ico_center{
+	margin: 0 6.6%;
+}
+.hover_ico_left{
+	float: left;
+}
+.hover_ico_right{
+	float: right;
+}
+.footer{
+	width: 100%;
+	min-width: 320px;
+	background: #2bbded;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 9;
+}
+.vote_btn{
+	display:block;
+	width: 75%;
+	border: none;
+	color: #fff;
+	font-size: 2.4rem;
+	background: #fbb438;
+	margin: 3rem auto;
+	padding: 1.4rem 0;
+}
+/*result*/
+.result_head{
+	position: relative;
+	padding: 1.3rem 0;
+	border-bottom:1px solid #e8e8e8; 
+}
+.result_head_left{
+	display: inline-block;
+	width: 3rem;
+	position: absolute;
+	left: 2rem;
+}
+.result_head_right{
+	display: inline-block;
+	width: 2.7rem;
+	position: absolute;
+	right: 2rem;
+}
+.result_main{
+	width: 100%;
+	padding: 0 3rem;
+}
+.main_img{
+	display: block;
+	width: 70%;
+	max-width: 351px;
+	margin: 0 auto;
+	padding: 1.3rem 0;
+}
+.main_txt{
+	font-size: 1.7rem;
+	color: #f0cb79;
+}
+.main_sum{
+	font-size: 1.5rem;
+	color: #fff;
+	margin: 0;
+	line-height: 1.2rem;
+	padding: 2rem 0 .6rem 0;
+}
+.sum_tab{
+	width: 100%;
+}
+.sum_tab li{
+	width: 33.33333333%;
+	float: left;
+	line-height: 1.6rem;
+}
+.main_time{
+	width: 100%;
+	background: #fff;
+	margin-bottom: 0;
+}
+.main_time li{
+	border-bottom:1px solid #e0e0e0;
+	padding: 0 3rem;
+}
+.time{
+	padding-top: .6rem;
+}
+.time_title_left{
+	float: left;
+	font-size: 1.8rem;
+	color: #797979;
+}
+.time_title_right{
+	float: right;
+	color: #999;
+}
+.time_txt{
+	font-size: 1.4rem;
+	color: #999;
+	padding: 1rem 0;
+}
+.bg_box{
+	height: 8rem;
+	background: #fff;
+}
+.result_footer{
+	width: 100%;
+	min-width: 320px;
+	background: rgba(43,189,237,0.5);
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 9;
+	padding: 1.5rem 1.5rem;
+}
+.result_btn{
+	width: 47%;
+	color: #fff;
+	font-size: 1.9rem;
+	border: 0;
+	border-radius: 5px;
+	padding: 1rem 1.5rem;
+	opacity: 1;
+}
+.left_btn{
+	float: left;
+	background: #f27072;
+}
+.right_btn{
+	float: right;
+	background: #fbb438;
+}
