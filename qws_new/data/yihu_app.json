@@ -1,0 +1,16 @@
+[
+    {
+        "os":1,
+        "version":"0.9.8",
+        "versioncode":7210,
+        "publishdate":"2017-11-29",
+        "description":"解决一些bug"
+    },
+    {
+        "os":2,
+        "version":"1.0",
+        "versioncode":2222,
+        "publishdate":"2017-11-29",
+        "description":"解决一些bug"
+    }
+]

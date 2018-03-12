@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+	<title>无法绑定</title>
+	<link rel="stylesheet" href="css/g800.css?v=2">
+	<link rel="stylesheet" href="qws-css/qws-ui.css">
+</head>
+<body>
+	<div class="g800_title">
+		<p>请参考以下示意图选择指示灯状态</p>
+		<img class="g800_ub1_img g800_img1_pad" src="images/p1_g800.png" alt="360骑卫士智能定位器 2代">
+	</div>
+	<div class="g800_border">
+		<p class="g800_txt">请选择指示灯状态：</p>
+		<div class="select">
+			<label id="1" class="icon-radio-notselect">
+				<input type="radio" class="qws_radio" name="blue">
+				<span class="g800_txt_bold">灯不亮</span>
+			</label>
+		</div>
+		<div class="select">
+			<label id="2" class="icon-radio-notselect">
+				<input type="radio" class="qws_radio" name="blue">
+				<span class="g800_txt_bold">红灯和黄绿灯都亮</span>
+			</label>
+		</div>
+		<div class="select">
+			<label id="3" class="icon-radio-notselect">
+				<input type="radio" class="qws_radio" name="blue">
+				<span class="g800_txt_bold">红灯快闪</span>
+			</label>
+		</div>
+		<div class="select">
+			<label id="4" class="icon-radio-notselect">
+				<input type="radio" class="qws_radio" name="blue">
+				<span class="g800_txt_bold">黄绿灯快闪</span>
+			</label>
+		</div>
+		<a href="javascript:;" class="g800_but">下一步</a>
+	</div>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/radiocheck.js"></script>
+	<script>
+		$(function(){
+			$('.g800_but').click(function(){
+				var s = $('.icon-radio-select').attr("id");
+					if(s=="1"){
+						window.location.href = "g800_ub2.html";
+					} else if(s=="2"){
+						window.location.href = "g800_ub7.html";
+					} else if(s=="3"){
+						window.location.href = "g800_ub6.html";
+					} else if(s=="4"){
+						window.location.href = "g800_ub3.html";
+					}else{
+						alert("请选择");
+					}
+			});
+		});
+	</script>
+</body>
+</html>

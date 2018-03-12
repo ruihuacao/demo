@@ -1,0 +1,197 @@
+ul,li,ol,li{
+	list-style-type:none;}
+.content{
+	width:100%;
+	height:685px;
+	border-bottom:1px solid #a7a7a7;
+	background: #ededed;
+}
+.main{
+	width:980px;
+	margin:0 auto;
+	}
+.main-left{
+	float:left;
+	width:490px;
+	margin-top:50px;
+	}
+.main-right{
+	float:right;
+	width:490px;
+	margin-top:50px;
+	}
+.main-right img{
+	width:180px;
+	height:180px;
+	display:block;
+	margin:0 auto;}
+.main-right h2{
+	width:260px;
+	margin:0 auto;
+	margin-top:50px;
+	font-weight:normal;
+	font-size:37px;
+	color:#686868;
+    text-align: center;
+	}
+.main-right p{
+    /*width:192px;*/
+    text-align: center;
+	height:35px;
+	line-height:35px;
+	margin:0 auto;
+	font-size:17.97px;
+}
+.main-right-txt{
+	color: #aaa;
+}
+.iphone_yihu,.android_yihu,.iphone_qws,.android_qws{
+	width:341px;
+	height:77px;
+	margin:0 auto;
+	}
+.iphone_yihu,.iphone_qws{
+	margin-top:60px;
+	}
+.iphone_yihu div,.iphone_qws div,.iphone_yihu a,.iphone_qws a{
+	width:142px;
+	margin:0 auto;
+	text-align: center;
+}
+.android_yihu div,.android_qws div,.android_yihu a,.android_qws a{
+	width:185px;
+	margin:0 auto;
+	text-align: center;
+	}
+.iphone_back_yihu,.an_back_yihu,.iphone_back_qws,.an_back_qws{
+	width:34px;
+	height:34px;
+	position:relative;
+	top:6px;
+	margin-top:3px;
+	display:inline-block;
+	}
+/*360qws*/
+.iphone_back_qws{
+	background:url(../images/iphone-1.png) no-repeat;
+	}
+.iphone_qws:hover .iphone_back_qws{
+	background:url(../images/iphone-2.png) no-repeat;
+	}
+.an_back_qws{
+	background:url(../images/and.png) no-repeat;
+	}
+.android_qws:hover .an_back_qws{
+	background:url(../images/and-2.png) no-repeat;
+	}
+.qws_tab_txt,.yihu_tab_txt{
+	height:34px;
+	display:inline-block;
+	font-size:25.88px;
+}
+.iphone_yihu:hover .qws_tab_txt,.iphone_qws:hover .qws_tab_txt,.android_yihu:hover .qws_tab_txt,.android_qws:hover .qws_tab_txt{
+	color:#fff;
+	}
+.iphone_yihu:hover .yihu_tab_txt,.iphone_qws:hover .yihu_tab_txt,.android_yihu:hover .yihu_tab_txt,.android_qws:hover .yihu_tab_txt{
+	color:#fff;
+	}	
+.iphone_yihu div p,.android_yihu div p,.iphone_qws div p,.android_qws div p{
+	margin:0 auto;
+	font-size:12.66px;
+}	
+.qws_tab_txt{
+	color:#00ba0c;
+}
+.android_yihu,.android_qws{
+	margin-top:25px;}
+.iphone_qws,.android_qws{
+	background:url(../images/ico-bg.png) no-repeat center;
+}
+.iphone_qws:hover,.android_qws:hover{
+	background:url(../images/ico-bg2.png) no-repeat center;
+}
+/*yihu*/
+.yihu_tab_txt{
+	color: #00b7ca;
+}
+.iphone_yihu,.android_yihu{
+	background:url(../images/yihu_ico_up.png) no-repeat center;
+}
+.iphone_yihu:hover,.android_yihu:hover{
+	background:url(../images/yihu_ico_down.png) no-repeat center;
+}
+.iphone_back_yihu{
+	background:url(../images/iphone_yihu.png) no-repeat;
+	}
+.yihu_iphone_app:hover .iphone_back_yihu{
+	background:url(../images/iphone-2.png) no-repeat;
+	}
+.an_back_yihu{
+	background:url(../images/an_yihu.png) no-repeat;
+	}
+.yihu_and_app:hover .an_back_yihu{
+	background:url(../images/and-2.png) no-repeat;
+	}
+.update,.btn-dwd-android-yihu{
+	width:1024px;
+	margin:0 auto;
+	margin-top:20px;
+	}
+.update>h2,.btn-dwd-android-yihu>h2{
+	font-size:28px;
+	color:#333;
+	margin-bottom:40px;}
+.ios{
+	width:390px;
+	float:left;
+	}
+.ios>h3,.and>h3{
+	font-weight:normal;
+	font-size:22px;
+	width:390px;
+	line-height:50px;
+	text-align:left;
+	margin-bottom:10px;
+	}
+.ios ul,.and ul{
+	margin-bottom:20px;
+	}
+.ios ul li,.and ul li{
+	width:390px;
+	line-height:40px;
+	text-align:left;
+	font-size:14px;
+	color:#555;	
+}
+.ios_text{
+	display:block;
+	line-height:26px;
+}
+.and{
+	width:390px;
+	float:right;}
+@media screen and (max-width:1433px){
+	.update>h2,.btn-dwd-android-yihu>h2{
+		font-size:28px;
+		color:#333;
+		margin-left:20px;
+		margin-bottom:40px;}
+	.ios{
+		width:390px;
+		float:left;
+		margin-left:30px;
+	}
+	.and{
+		width:390px;
+		float:right;
+		margin-right:30px;}
+	}
+	
+	
+/*固定宽度	*/
+@media screen and (max-width:1024px){
+	.content {
+		width:1024px;
+		background: #ededed;
+	}	
+	}

@@ -1,0 +1,103 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+        <meta http-equiv="pragma" content="no-cache">
+        <meta http-equiv="cache-control" content="no-cache">
+        <meta http-equiv="expires" content="0">
+        <title>无法绑定</title>
+        <link rel="stylesheet" href="css/bind.css">
+        <link rel="stylesheet" href="css/swiper.min_1.css">
+    </head>
+    
+    <body>
+      
+         <div class="top_4">
+             <P style="margin-bottom:0;">您的SIM卡可能未插好，请参照以下步骤操作：</P>
+             <ul class="text_2">
+                 <li>1. 请先断开电瓶后取下设备（图示1）</li>
+                 <li>2. 请重新插拔SIM卡（图示2）后再次连接设备</li>
+                 <li>3. 连接电瓶通电后，请等待30秒左右再进行下一步操作</li>
+             </ul>
+         </div>
+ 	
+    	<div class="middle_4">
+             <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                       <img class="littlelight_4" src="images/0.png">
+                       <img class="littlelight_4s" src="images/P4-1s.png">
+                    </div>
+                    <div class="swiper-slide">
+                       <img class="littlelight_4" src="images/P4-2.png">
+                        <img class="littlelight_4_2s" src="images/P4-2S.png">
+                    </div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+             </div>
+         </div>
+         
+         <div class="main-border4">
+            <ul class="select clearfix">
+               <li style="padding-top:10px;">
+                   <span>
+                       <img src="images/dx.png" class="option">
+                   </span>
+                   <b>已重新插拔SIM卡，试试重新绑定</b>
+               </li>
+               <li>
+                   <span>
+                       <img src="images/dx.png" class="option">
+                   </span>
+                   <b>已重新插拔SIM卡，仍然无法绑定</b>
+               </li>
+               <li>
+                   <span>
+                       <img src="images/dx.png" class="option">
+                   </span>
+                   <b>无法取出SIM卡</b>
+               </li>
+            </ul>
+            <div class="but"><a href="javascript:void(0);" class="an">下一步</a></div>
+         </div>
+      
+      <script src="js/jquery-1.8.3.min.js"></script>
+      <script src="js/swiper.min.js"></script>
+      <script>
+         $(document).ready(function() {
+			
+			$("li").click(function(){
+				$(".option").attr("src","images/dx.png");
+				$(this).find("img").attr("src","images/yx.png");
+				var i = $(this).index();
+				if(i===0){
+					$(".an").attr("href","aboutbind_11.html");
+				}
+				else if(i===1){
+					$(".an").attr("href","aboutbind_10.html");
+				}
+				else if(i===2){
+					$(".an").attr("href","aboutbind_12.html");
+				}
+			});
+			
+			var swiper = new Swiper('.swiper-container', {
+				pagination: '.swiper-pagination',
+				paginationClickable: true,
+				onSlideChangeStart: function(swiper){
+					$(".swiper-pagination-bullet").css("background-image","");
+					if(swiper.activeIndex===0){
+						$(".swiper-pagination-bullet-active").css("background-image","url(images/P_01.png)");
+					}
+					else $(".swiper-pagination-bullet-active").css("background-image","url(images/P_02.png)");
+				},
+				spaceBetween: 30,
+				
+			});
+		});
+      </script>
+    </body>
+</html>                 
+                

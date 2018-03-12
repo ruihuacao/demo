@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+	<title>无法绑定</title>
+	<link rel="stylesheet" href="qws-css/qws-ui.css">
+	<link rel="stylesheet" href="css/g500.css">
+</head>
+<body>
+	<div class="title">
+		<p>请打开设备背后的小盖板，按下遥控器上的“撤防”按键，然后按以下图示检查指示灯的状态</p>
+	</div>
+	<div class="img img2">
+		<img src="img/g500_p2.png" alt="">
+	</div>
+	<div class="op">
+		<p class="op_title">请选择<span class="blue">蓝色</span>指示灯的状态</p>
+		<p class="radio"><label id="4" class="icon-radio-notselect">
+			<input type="radio" class="qws_radio" name="red"/><span>蓝灯常亮</span>
+		</label></p>
+		<p class="radio"><label id="11" class="icon-radio-notselect">
+			<input type="radio" class="qws_radio" name="red"/><span>蓝灯闪烁</span>
+		</label></p>
+		<p class="radio"><label id="8" class="icon-radio-notselect">
+			<input type="radio" class="qws_radio" name="red"/><span>蓝灯不亮</span>
+		</label></p>
+		<a class="btn" href="javascript:;">下一步</a>
+	</div>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/radiocheck.js"></script>
+	<script>
+		$(function(){
+			$('.btn').click(function(){
+				var s = $('.icon-radio-select').attr("id");
+				if(s){
+					window.location.href = "g500_ub"+s+".html";
+				} else {
+					alert("请选择");
+				}
+			});
+		});
+	</script>
+</body>
+</html>

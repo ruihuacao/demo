@@ -1,0 +1,292 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body{
+	background: #fff;
+}
+ul,li,h1,h2,h3,h4,h5,h6,a,input,select,textarea,p{
+	color: #000;	
+}
+a:link,a:visited,a:hover,a:active{
+	text-decoration: none;
+	color: #000;
+	list-style-type:none;
+}
+body{
+	padding:0px;
+	margin:0px;
+	font-size:12px;
+	font-family: "Arial","Microsoft YaHei","黑体","宋体",sans-serif;
+}
+a{outline:none;}
+*{  
+  /*很多Android 浏览器的 a 链接有边框，这里取消它*/  
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);  
+}
+input{-webkit-tap-highlight-color:rgba(0,0,0,0);}
+input {outline:none;}
+img{
+	border:none;
+}
+body, html {
+	margin: 0;
+	-webkit-transition: opacity 400ms;
+	-moz-transition: opacity 400ms;
+	transition: opacity 400ms;
+}
+body, .onepage-wrapper, html {
+	display: block;
+	position: static;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+}	
+.fr{
+	float:left;}
+.fl{
+	float:right;}
+	
+.clearfix:after{
+	content:".";
+	display:block;
+	clear:both;
+	font-size:0;
+	height:0;
+	visibility:hidden;
+	}
+.wrap{
+	width:100%;
+	background-color:#fff;
+	}
+/*header*/
+.nav{
+	width:100%;
+	height:42px;
+	background:#FFF;
+	border-bottom:1px solid #e0dfdf;
+	list-style-type:none;
+	}
+.inner{
+	width:1200px;
+	margin:0 auto;
+	list-style-type:none;
+	}
+.menu{
+	float:right;
+	list-style-type:none;
+	}
+.M,.M-1{
+	/*width:130px;*/
+	text-align:center;
+	float:left;
+	font-size:1.4em;
+}
+.M-a,.M-text{
+	padding:0 23px;
+	display: inline-block;
+	height:42px;
+	line-height:42px;
+}
+.M-a{
+	color:#7e7d7d;
+	transition:color .2s;
+	}
+.M-a:hover{
+	color:#30c100;}
+.M-text{
+	color:#30c100;
+}
+.input{
+	height:22px;
+	line-height:60px;
+}
+.dropdown{
+	width:180px;
+    display:none;
+	position:absolute;
+	z-index:99;
+	margin-left:-25px;
+	border:1px solid #E5E5E5;
+	background-color:#fff;
+	}
+.dropdown p{
+	text-align:center;
+	}
+.dropdown p a{
+	height:36px;
+	line-height:36px;
+	display: inline-block;
+	font-size:16px;
+	}
+.dropdown p:hover{
+	color:#30c100;
+	}
+.dropdown p:hover a{
+	color:#30c100;}
+.menu li:hover div{
+	display:block;}
+/*GPS 蓝牙*/
+.subnav{
+	width:100%;
+	height:42px;
+	background:#393939;
+	list-style-type:none;}
+.submenu{
+	float:right;
+	list-style-type:none;
+	}		
+.M-2,.M-3{
+	text-align:center;
+	float:left;
+	font-size:1.3em;
+	}
+.M-2{
+	width:110px;
+	}
+.M-b,.M-b-text,.M-3 span{
+	height:42px;
+	line-height:42px;
+	display: inline-block;
+}
+.M-b{
+	color:#acacac;
+	transition:color .3s;}
+.M-b:hover{
+	color:#30c100;}
+.M-b-text{
+	color:#30c100;}
+
+.M-text2{
+	color:#00a8d5;
+	font-size:1.1em;}
+.txt,.M-c{
+	width:90px;
+	height:60px;
+	line-height:60px;
+	text-align:center;
+	float:left;
+	font-size:1.1em;
+}
+.inner-a:hover ul{
+	display:block;
+}
+.logo2{
+	line-height:60px;
+	}	
+.picture{
+	width: 100%;
+	display: block;
+	margin: 0 auto;
+	overflow: hidden;
+	min-width: 1024px;
+	}	
+.footer-try{ 
+	font-size:18px;
+	height:60px; 
+	line-height:60px;
+	text-align:center;
+	width:200px; 
+	margin:0 auto;
+	margin-top:30px;
+	}
+.footer-try a{
+	color:#555;
+	}
+.footer-try a:hover{
+	text-decoration:underline;
+	color:#F00;
+	}
+/*底部	*/
+.footer{
+	width:100%;}
+.footer-border{
+	width:70%;
+	border-top:1px solid #a5a5a5;
+	margin:0 auto;}
+.footer-text{
+	width:65%;
+	min-width: 1024px;
+	margin:0 auto;}
+.text{
+	width:20%;
+	float:left;
+	}
+.text ul,.text2 ul{
+	list-style-type:none;}
+.text ul h3{
+	width:100px;
+	height:50px;
+	line-height:50px;
+	text-align:center;
+	color:#333;
+	font-size:1.6em;
+	margin:0 auto;
+	margin-top:20px;
+	}
+.text ul li{
+	width:100px;
+	height:30px;
+	line-height:30px;
+	text-align:center;
+	font-size:1.2em;
+	margin:0 auto;
+	}
+.text ul li img{
+	display:none;
+	position:absolute;
+	z-index:99;
+	margin-left:90px;
+	margin-top:-50px;
+}
+.text ul li a:hover{
+	color:#00a8d5;
+	text-decoration:underline;}
+.text ul li:hover img{
+	display:block;
+	}
+.text2{
+	width:20%;
+	float:right;
+}
+.text2 ul h4{
+	width:160px;
+	height:50px;
+	line-height:50px;
+	text-align:center;
+	color:#333;
+	font-size:1.6em;
+	margin:0 auto;
+	margin-top:20px;
+	}
+.text2 ul li{
+	width:160px;
+	height:30px;
+	line-height:30px;
+	text-align:center;
+	font-size:1.2em;
+	margin:0 auto;
+	}
+.text2 ul li a:hover{
+	color:#00a8d5;
+	text-decoration:underline;
+	}
+.text3{
+	width:100%;
+	margin-bottom:60px;
+	}
+.text3>p{
+	width:800px;
+	font-size:1em;
+	color:#555;
+	height:36px;
+	line-height:36px;	
+	text-align:center;
+	margin:0 auto;
+	}
+.text3 >p a{
+	color:#222;
+	}
+.text3 >p a:hover{
+	color:#000;
+}	

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+	<title>无法绑定</title>
+	<style>
+		*{padding: 0;margin: 0;}
+		html,body{width: 100%;height: 100%;}
+		iframe{width: 100%;height: 100%;}
+	</style>
+</head>
+<body>
+	<script>
+		if(GetQueryString("locmodeltype")==5){
+			window.location.href = "g500/g500_ub1.html";
+		} else if(GetQueryString("locmodeltype")==12){
+			window.location.href = "g800/g800_ub1.html";
+		} else{
+			window.location.href = "aboutbind.html";
+		}
+		function GetQueryString(name){
+	         var reg = new RegExp("(^|&)"+ name +"=([^&]*)(&|$)");
+	         var r = window.location.search.substr(1).match(reg);
+	         if(r!=null)return unescape(r[2]); return "";
+	    }
+	</script>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="pragma" content="no-cache">
+        <meta http-equiv="cache-control" content="no-cache">
+        <meta http-equiv="expires" content="0">
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+        <title>感应防盗器选项说明</title>
+        <style>
+		p{
+			margin:0;
+			padding:0;
+			}
+		.wrap{
+			width:100%;
+			max-width:550px;
+			margin:0 auto;
+			background:#efeff4;
+			}
+		.content{
+			width:90%;
+			margin:0 auto;
+			}
+		#talertor_text p{
+			line-height:25px;
+			font-size:18px;
+			}
+		#talertor_img{
+			width:100%;
+			margin-top:10%;
+			}
+		</style>
+    </head>
+    
+    <body>
+      <div class="wrap">
+         <div class="content">
+            <div id="talertor_text">
+               <p>当您同时安装了GPS定位器和感应防盗器，并确保两个设备正确连接时(如下图)</p>
+               <p>你就能开启感应防盗器选项，对车辆进行远程遥控操作。</p>
+            </div>
+            <div id="talertor_img">
+               <img src="images/talertor.png" width="100%">
+            </div>            
+         </div>
+      </div>
+      <script src="js/jquery-1.8.3.min.js"></script>
+      <script>
+		$(document).ready(function() {
+		  var sn = GetQueryString("sn");
+		  $.ajax({
+			url: "http://210.22.78.6:9090/app/checkalertorfunc",
+			method: 'POST',
+			dataType: 'jsonp',
+			contentType: 'text/html',
+			data: {token:"123",sn:"ZG201AB15042400747"},
+			success: function(data){
+				// if(data.data.type===0){
+//					 $("#talertor_text").show();
+//					 $("#talertor_img").hide();
+//				}
+//				else if(data.data.type===1){
+//					 $("#talertor_img").show();
+//					 $("#talertor_text").hide();
+//				}
+			}
+		 });
+
+		});
+		
+	  	function GetQueryString(name)
+		{
+			 var reg = new RegExp("(^|&)"+ name +"=([^&]*)(&|$)");
+			 var r = window.location.search.substr(1).match(reg);
+			 if(r!=null)return  unescape(r[2]); return null;
+		}
+      </script>
+      <script type="text/javascript">
+	    var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan style='display:none' id='cnzz_stat_icon_1259218156'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s95.cnzz.com/z_stat.php%3Fid%3D1259218156%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));
+	  </script> 
+    </body>
+</html>
+                 
+                

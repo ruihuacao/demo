@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+	<title>无法绑定</title>
+	<link rel="stylesheet" href="qws-css/qws-ui.css">
+	<link rel="stylesheet" href="css/g500.css">
+</head>
+<body>
+	<div class="title">
+		<p>1-请按以下图示检查设备接线是否连接正确</p>
+		<p>2-请检查拨动开关是否已向左打开</p>
+	</div>
+	<div class="img img2">
+		<img src="img/g500_p7.png" alt="">
+		<a class="btn" href="g500_ub2.html">下一步</a>
+	</div>
+	<script src="js/jquery.min.js"></script>
+	<script>
+		$(function(){
+			if(GetQueryString("flag")=="1"){
+				$('.btn').attr("src","g500_ub2.html?flag=1");
+			}
+		});
+		function GetQueryString(name){
+	         var reg = new RegExp("(^|&)"+ name +"=([^&]*)(&|$)");
+	         var r = window.location.search.substr(1).match(reg);
+	         if(r!=null)return unescape(r[2]); return "";
+	    }
+	</script>
+</body>
+</html>

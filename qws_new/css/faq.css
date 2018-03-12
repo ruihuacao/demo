@@ -1,0 +1,106 @@
+ul,li,ol,li{
+	list-style-type:none;}
+#joinCount{
+	width:1000px;
+	margin:0 auto;
+}
+#joinCount .joinLeft{
+	float:right;
+	width:800px;
+	padding-top:60px;}
+#joinCount .joinLeft .oneList{
+	padding-top: 5px;}
+#joinCount .joinLeft .oneList ul{
+	margin-left: 10px;}
+#joinCount .joinLeft .oneList ul li{
+	color:#7F7F7F;
+	line-height:24px;
+	font-size:15px;}
+
+#joinCount .joinLeft .oneList ol{
+	margin-left: 10px;}
+#joinCount .joinLeft .oneList ol li{
+	color:#7F7F7F;
+	line-height: 24px;
+	font-size:15px;}
+
+#joinCount .joinLeft .oneList .nImpor{
+	color:#B2B2B2;
+	font-size:15px;}
+#joinCount .joinLeft .oneList span{
+	display: block;
+	margin-top:20px;}
+#joinCount .joinLeft .oneList h2{
+	font-size:20px;
+	color:#262626;
+	position:relative;
+	padding-bottom: 10px;}
+#joinCount .joinLeft .oneList h3{
+	font-size:15px;
+	color:#727272;
+	margin-top:10px;
+	padding-bottom: 6px;}
+#joinCount .joinLeft .oneList p{
+	line-height:25px;
+	color:#878787;
+	font-size:15px;
+	padding-left: 10px;}
+.tet{
+	text-indent:2em;
+	}
+
+#joinCount .joinRight{
+	position:fixed;
+	width:120px;
+	left:20%;
+	top:26%;
+	border-right:1px solid #979797;}
+#joinCount .joinRight dt{
+	font-size:20px;
+	height:36px;
+	line-height:36px;
+	color:#696969;}
+#joinCount .joinRight dt img{
+	padding-right:10px;}
+#joinCount .joinRight dd{
+	line-height:28px;
+	position:relative;}
+#joinCount .joinRight dd.active{}
+#joinCount .joinRight dd.active a{
+	color:#ff6a65;}
+#joinCount .joinRight dd a{
+	color:#7f7f7f;}
+#joinCount .joinRight dl{
+	font-size:15px;
+	margin-bottom:20px;
+	}
+
+.oneList{
+	margin-bottom:40px;}
+@media screen and (max-width:1433px){
+
+	#joinCount{
+		width:830px;
+		margin:0 auto;
+	}
+	#joinCount .joinLeft{
+		width:600px;
+		float:right;
+		margin:0 auto;
+       }
+	#joinCount .joinRight{
+		width:100px;
+		left:8%;
+		top:26%;
+		border-right:1px solid #979797;}
+	}
+.yhgz{
+	margin-bottom: 40px;
+	line-height: 25px;
+	color: #878787;
+	font-size: 15px;
+	padding-left: 10px;
+}
+.yhgz a{
+	color: #ff6a65;
+}

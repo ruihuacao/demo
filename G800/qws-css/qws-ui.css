@@ -1,0 +1,90 @@
+*{margin: 0;padding: 0;outline: none;}
+/*button*/
+.qws-button{padding: 10px 15px;color: #fff;cursor: pointer;font-size: 1rem;border-radius: 4px;border: none;display: inline-block;}
+.qws-button[disabled]{background-color: #bcbec0;cursor: not-allowed;}
+.qws-button-default{background-color: #bbb;}
+.qws-button-default:hover{background-color: #ccc;}
+.qws-button-default:active{background-color: #aaa;}
+.qws-button-success{background-color: #30c100;}
+.qws-button-success:hover{background-color: #30d100;}
+.qws-button-success:active{background-color: #2fa200;}
+.qws-button-info{background-color: #0080ff;}
+.qws-button-info:hover{background-color: #0090ff;}
+.qws-button-info:active{background-color: #0060ff;}
+.qws-button-warning{background-color: #ff9300;}
+.qws-button-warning:hover{background-color: #ffaa00;}
+.qws-button-warning:active{background-color: #ff6700;}
+.qws-button-error{background-color: #ff2200;}
+.qws-button-error:hover{background-color: #ff5300;}
+.qws-button-error:active{background-color: #ff0000;}
+.qws-button-huge{font-size:1.4rem;padding: 12px 18px;}
+.qws-button-small{font-size:0.7rem;padding: 8px 12px;}
+/*input*/
+.qws-input{padding:8px 10px;border-radius: 4px;border: 2px solid #bdc3c7;font-size: 1rem;}
+.qws-input-error{border-color: #ff0000;}
+.qws-input-warning{border-color: #ffaa00;}
+.qws-input-success{border-color: #30c100;}
+.qws-input[disabled]{background-color: #f4f6f6;cursor: not-allowed;border-color: #d5dbdb;}
+.qws-input-huge{padding: 12px 16px;font-size: 1.4rem;}
+.qws-input-small{padding: 6px 7.5px;font-size: 0.7rem;}
+.qws-input-round{border-radius: 2rem;}
+.qws-input-group .qws-input{border-bottom: none;border-radius: 0;display: block;}
+.qws-input-group .qws-input:first-child{border-radius: 4px 4px 0 0;}
+.qws-input-group .qws-input:last-child{border-bottom: 2px solid #bdc3c7;border-radius: 0 0 4px 4px;}
+/*table*/
+.qws-table{border: 1px solid #bdc3c7;border-collapse:collapse;}
+.qws-table thead{background-color: #ddd;font-weight: bold;}
+.qws-table td{border: 1px solid #bdc3c7;}
+.qws-table-nocolline td{border-left: 0;border-right: 0;}
+.qws-table-norowline td{border-top: 0;border-bottom: 0;}
+.qws-table-odd tbody tr:nth-child(2n){background-color: #eee;}//ie8 以下不支持,请逐个使用qws-tr-odd类
+.qws-tr-odd{background-color: #eee;}
+/*radiobutton,checkbox*/
+@font-face {
+    font-family: 'qws-ui-icons';
+    src:    url('fonts/qws-ui-icons.eot?bjoh2r');
+    src:    url('fonts/qws-ui-icons.eot?bjoh2r#iefix') format('embedded-opentype'),
+        url('fonts/qws-ui-icons.ttf?bjoh2r') format('truetype'),
+        url('fonts/qws-ui-icons.woff?bjoh2r') format('woff'),
+        url('fonts/qws-ui-icons.svg?bjoh2r#qws-ui-icons') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'qws-ui-icons' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+	cursor: pointer;
+	color: #30c100;
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-radio-notselect:before {
+    content: "\e001";
+}
+.icon-radio-select:before {
+    content: "\e002";
+}
+.icon-pic-select:before {
+    content: "\e003";
+}
+.icon-check-notselect:before {
+    content: "\e004";
+}
+.icon-check-select:before {
+    content: "\e005";
+}
+
+.qws_checkbox{display: none;}
+.qws_radio{display: none;}
+label span{color: #000;}
+
+.qws-select{border: 1px solid #bdc3c7;padding: 5px;border-radius: 5px;}

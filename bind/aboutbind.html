@@ -1,0 +1,138 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+        <meta http-equiv="pragma" content="no-cache">
+        <meta http-equiv="cache-control" content="no-cache">
+        <meta http-equiv="expires" content="0">
+        <title>无法绑定</title>
+        <link rel="stylesheet" href="css/bind.css">
+    </head>
+    
+    <body>
+         <div class="text">
+             <P>请参考示意图选择指示灯状态</P>
+         </div>
+         <div class="middle">
+             <div class="example">
+                 <img class="littlelight" src="images/sd.png">
+             </div>
+         </div>
+         <div class="main-border1">
+            <ul class="select clearfix">
+               <li style="padding-top:10px;">
+                   <span>
+                       <img src="images/dx.png" class="option">
+                   </span>
+                   <b>没有灯或已安装好无法看到灯状态</b>
+               </li>
+               <li>
+                   <span>
+                       <img src="images/dx.png" class="option">
+                   </span>
+                   <b>灯不亮</b>
+               </li>
+               <li>
+                   <span>
+                       <img src="images/dx.png" class="option">
+                   </span>
+                   <b>灯快速闪烁（0.5秒）</b>
+               </li>
+               <li>
+                   <span>
+                       <img src="images/dx.png" class="option">
+                   </span>
+                   <b>灯慢速闪烁（1.5秒）</b>
+               </li>
+               <li>
+                   <span>
+                       <img src="images/dx.png" class="option">
+                   </span>
+                   <b>灯快慢交替闪烁</b>
+               </li>
+               <li>
+                   <span>
+                       <img src="images/dx.png" class="option">
+                   </span>
+                   <b>灯常亮</b>
+               </li>
+            </ul>
+            <div class="but">
+               <a href="javascript:void(0);" class="an">下一步</a>
+               <p></p>
+            </div>
+         </div>
+      <script src="js/jquery-1.8.3.min.js"></script>
+      <script>
+         $(document).ready(function() {
+			 //div宽高自动比例
+			var width = $(".example").width();
+			var height = width*593/791;
+			var bwidth = $("body").width();
+			var lwidth = bwidth*0.0483;
+			$(".example").height(height);
+			$(".littlelight").width(lwidth);
+			var mh = $(".middle").height();
+			var eh = $(".example").height();
+			var num = (mh-eh)/2;
+			$(".example").css("margin-top",num);
+			//闪
+			$("li").click(function(){				
+				$(".option").attr("src","images/dx.png");
+				$(this).find("img").attr("src","images/yx.png");
+				var i = $(this).index();
+				if(i===0||i===1){
+					$(".littlelight").hide();
+					$(".an").attr("href","aboutbind_2.html");
+				}
+				else if(i===2){
+					$(".an").attr("href","aboutbind_3.html");
+					$(".littlelight").show();
+					$(".littlelight").css("animation-name","mydemo1");
+					$(".littlelight").css("animation-duration","1s");
+					$(".littlelight").css("-moz-animation-name","mydemo1");
+					$(".littlelight").css("-moz-animation-duration","1s");
+					$(".littlelight").css("-webkit-animation-name","mydemo1");
+					$(".littlelight").css("-webkit-animation-duration","1s");
+					$(".littlelight").css("-o-animation-name","mydemo1");
+					$(".littlelight").css("-o-animation-duration","1s");
+				}
+				else if(i===3){
+					$(".an").attr("href","aboutbind_3.html");
+					$(".littlelight").show();
+					$(".littlelight").css("animation-name","mydemo2");
+					$(".littlelight").css("animation-duration","3s");
+					$(".littlelight").css("-moz-animation-name","mydemo2");
+					$(".littlelight").css("-moz-animation-duration","3s");
+					$(".littlelight").css("-webkit-animation-name","mydemo2");
+					$(".littlelight").css("-webkit-animation-duration","3s");
+					$(".littlelight").css("-o-animation-name","mydemo2");
+					$(".littlelight").css("-o-animation-duration","3s");
+				}
+				else if(i===4){
+					$(".an").attr("href","aboutbind_4.html");
+					$(".littlelight").show();
+					$(".littlelight").css("animation-name","mydemo");
+					$(".littlelight").css("animation-duration","3s");
+					$(".littlelight").css("-moz-animation-name","mydemo");
+					$(".littlelight").css("-moz-animation-duration","3s");
+					$(".littlelight").css("-webkit-animation-name","mydemo");
+					$(".littlelight").css("-webkit-animation-duration","3s");
+					$(".littlelight").css("-o-animation-name","mydemo");
+					$(".littlelight").css("-o-animation-duration","3s");
+				}
+				else if(i===5){
+					$(".an").attr("href","aboutbind_3.html");
+					$(".littlelight").show();
+					$(".littlelight").css("animation-name","");
+					$(".littlelight").css("-moz-animation-name","");
+					$(".littlelight").css("-webkit-animation-name","");
+					$(".littlelight").css("-o-animation-name","");
+				}
+			});						
+		 });
+      </script>
+    </body>
+</html>                 
+                

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>360骑卫士招聘</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+        <link rel="stylesheet" href="css/swiper.min.css"> 
+        <link rel="stylesheet" href="css/animate.min.css">
+        <script src="js/jquery-1.11.3.min.js"></script>
+        <script src="js/min.js"></script>   
+    </head>
+    <body>
+        <!-- Swiper -->
+        <div class="swiper-container">
+            <!--yinyue-->
+            <!--<div class="ico">
+               <div id="yinyue" onclick="control()"></div>
+               <audio id="music" src="images/demo2.mp3" autoplay></audio>
+            </div>-->
+            <div class="swiper-wrapper">
+            
+               <!--第一页-->
+               <div class="swiper-slide">
+                   <div class="main-img">
+                      <img src="images/01-2.png" alt="" class="main-ico ani" swiper-animate-effect="bounce" swiper-animate-duration="0.8s" swiper-animate-delay="0">
+                      <img src="images/01-5.png" alt="" class="main-ico6">
+                      <div id="demo" class="ani"></div> 
+                   </div>
+                </div>
+                
+                <!--第二页-->
+                <div class="swiper-slide">
+                   <div class="main-img1">
+                      <div class="ww clearfix">
+                          <img src="images/02-2.png" alt="" class="main-ico3 ani"  swiper-animate-effect="bounceInLeft" swiper-animate-duration="0.5s" swiper-animate-delay="0.2s">
+                          <img src="images/02-3.png" class="main-ico5 ani" swiper-animate-effect="bounceInRight" swiper-animate-duration="0.5s" swiper-animate-delay="0">
+                          <a href="backstage.html" class="anniu ani" swiper-animate-effect="bounceInLeft" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">
+                             <button type="button">后台服务开发工程师</button>
+                          </a>
+                          <a href="sale.html" class="anniu1 ani" swiper-animate-effect="bounceInLeft" swiper-animate-duration="0.5s" swiper-animate-delay="0.6s">
+                             <button type="button">售后服务经理</button>
+                          </a>
+                          <a href="project.html" class="anniu2 ani" swiper-animate-effect="bounceInLeft" swiper-animate-duration="0.5s" swiper-animate-delay="0.9s">
+                             <button type="button">交互体验设计师</button>
+                          </a>
+                      </div>
+                   </div>
+                </div>
+                
+                <!--第三页-->
+                <div class="swiper-slide">
+                   <div class="main-img2">
+                      <div class="ww">
+                         <img src="images/03-2.png" alt="" class="main-ico3 ani"  swiper-animate-effect="bounceInLeft" swiper-animate-duration="0.5s" swiper-animate-delay="0">
+                         <img src="images/03-3.png"  class="main-ico5 ani" swiper-animate-effect="bounceInRight" swiper-animate-duration="0.5s" swiper-animate-delay="0">
+                         <a href="publicity.html" class="anniu1 ani" style="margin-top:0;" swiper-animate-effect="bounceInLeft" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">
+                            <button type="button" style="margin-top:12%;" >宣传策划经理</button>
+                         </a>
+                      </div>
+                   </div>
+                </div>
+                
+                <!--第四页-->
+                <div class="swiper-slide">
+                   <div class="main-img3">
+                      <div class="ww">
+                          <img src="images/04-2.png" alt="" class="main-ico3 ani"  swiper-animate-effect="bounceInLeft" swiper-animate-duration="0.5s" swiper-animate-delay="0">
+                          <img src="images/04-3.png"  class="main-ico5 ani" swiper-animate-effect="bounceInRight" swiper-animate-duration="0.5s" swiper-animate-delay="0">
+                          <a href="bazaar.html" class="anniu1 ani" style="margin-top:0;"  swiper-animate-effect="bounceInLeft" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">
+                            <button type="button" style="margin-top:12%;">市场推广主管</button>
+                          </a>
+                      </div>
+                   </div>
+                </div>
+                
+                <!--第五页-->
+                <div class="swiper-slide">
+                   <div class="main-img4">
+                      <img src="images/05-2.png" width="86%" height="86%" alt="" class="main-ico4 ani"  swiper-animate-effect="bounceInDown" swiper-animate-duration="0.5s" swiper-animate-delay="0">
+                      <div id="demo2"></div>
+                      <div class="text ani" swiper-animate-effect="bounceInLeft" swiper-animate-duration="0.5s" swiper-animate-delay="0.5s"> 
+                        <img src="images/logo.png" width="50%" height="50%">
+                        <p class="text-css">上海天奕无线信息科技有限公司</p>
+                        <p class="text-css1">由奇虎三六零软件（北京）有限公司于2014年2月投资成立，是一家以智能硬件为基础，致力于打造一套便捷的电动自行车垂直领域移动互联云平台的高科技公司。</p>
+                        <p class="text-css3">www.360qws.com</p>
+                        <p class="text-css2">简历请发送到邮箱：</p>
+                        <p class="text-css1">hr@ti-link.com.cn</p>
+                     </div>
+                   </div>
+                </div>
+            </div>
+            <!-- Add Pagination -->
+            <!--<div class="swiper-pagination"></div>-->
+        </div>
+        
+        <!-- JS -->
+        <script src="js/swiper.min.js"></script>
+        <script src="js/swiper.animate.min.js"></script> 
+        <script>            
+            var hash = window.location.hash?window.location.hash:"#0";
+            var id = parseInt(hash.substring(1));
+    
+            var swiper = new Swiper('.swiper-container', {
+                pagination: '.swiper-pagination',
+                paginationClickable: true,
+                direction: 'vertical',
+                loop: true,
+                initialSlide: id,
+                onInit: function(swiper){ //Swiper2.x的初始化是onFirstInit
+                    setTimeout(function(){
+						swiperAnimateCache(swiper); //隐藏动画元素 
+                    	swiperAnimate(swiper); //初始化完成开始动画
+					},1000);
+                }, 
+                onSlideChangeEnd: function(swiper){ 
+                    swiperAnimate(swiper); //每个slide切换结束时也运行当前slide动画
+                    var current = (swiper.activeIndex - 1) % (swiper.slides.length-2);
+                    if(current===-1)window.location.hash = "#4";
+                    else window.location.hash = "#"+current;
+                } 
+            });
+        </script>
+       
+    </body>
+</html>

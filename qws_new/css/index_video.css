@@ -1,0 +1,34 @@
+#ind_video{
+	width: 1024px;
+	margin: 130px auto 0px;
+	display: table;
+}
+#tck,#tck_1,#tck_2{
+	cursor: pointer;
+	text-align: center;
+	display: inline-block;
+}
+#ind_video img{
+	width: 235px;
+	height: 107px;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+
+}
+.tck_right{
+    float: right;
+}
+.tck_left{
+    float: left;
+}
+.tck_mid{
+	margin-left: 159.5px;
+}
+.tck_title{
+	width: 235px;
+	font-size: 15px;
+	color: #555;
+	line-height: 45px;
+	text-align: center;
+}

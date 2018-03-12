@@ -1,0 +1,185 @@
+/*install 的 css*/
+.content{
+	width:980px;
+	margin:0 auto;
+	margin-top:80px;
+	}
+.content_suit{
+	width:960px;
+	margin:0 auto;
+	margin-top:80px;
+	}
+.con-left{
+	float:left;
+	}
+.con-right{
+	float:right;
+	}
+/*parameter 的 css*/
+.param3 {
+	width: 700px;
+	padding-bottom: 60px;
+	margin: 0 auto;
+	color: #4c4c4c
+}
+
+.param3 .t-param3 {
+	width: 300px;
+	margin:0 auto;
+	text-align:center;
+	height: 20px;
+	line-height: 20px;
+	font-size: 20px;
+	padding-top: 20px;
+	padding-bottom: 30px;
+	color:#4c4c4c;
+}
+
+.param3 .b-param3 {
+	border: 1px solid #cecece;
+	width: 100%;
+	font-size: 14px
+}
+.param3 .b-param4 {
+	border: 1px solid #cecece;
+	width: 60%;
+	font-size: 14px;
+	margin:0 auto;
+}
+.b-param3 .b-t {
+	width: 100%;
+}
+
+.b-t .b-t-r {
+	margin: 0 auto;
+	width: 100%
+}
+.b-t-r .bline {
+	line-height: 44px;
+	border-bottom: 1px solid #cecece
+}
+
+.bline .headtag {
+	margin-right: 20px;
+	border-right: 1px solid #cecece;
+	font-weight: 900;
+	display: block;
+	line-height: 45px;
+	width: 150px;
+	text-align: center;
+	float: left
+}
+.headtag0 {
+	margin-right: 20px;
+	border-right: 1px solid #cecece;
+	font-weight: 900;
+	display: block;
+	line-height: 45px;
+	width: 250px;
+	text-align: center;
+	float: left
+}
+.tx{
+	padding-left:40px;
+	}
+.headtag1 {
+	margin-right: 20px;
+	border-right: 1px solid #cecece;
+	display: block;
+	line-height: 45px;
+	width: 250px;
+	text-align: center;
+	float: left
+}
+.headtag2 {
+	display:inline-block;
+	width:125px;
+	color:#4c4c4c;
+	font-weight: 900;
+	line-height:45px;
+	text-align: center;
+}
+
+.table{
+	border: 2px solid #cecece;
+	border-collapse:collapse; 
+	overflow:hidden;
+	margin:0 auto;
+	}
+.table th{
+	font-size:16px;
+	color:#4c4c4c;
+	line-height:45px;
+	text-align:center;
+	}
+.text-td{
+	line-height:45px;
+	text-align:center;
+	font-weight:bold;
+	}
+.text-tt{
+	font-weight:bold;
+	}
+.table td{
+	font-size:14px;
+	color:#4c4c4c;
+	line-height:36px;
+	text-align:center;
+	}
+.table td p{
+	line-height:26px;
+	color:#4c4c4c;
+	}
+
+/*use 的 css*/
+
+
+.main{
+	width:980px;
+	margin:0 auto;
+	margin-top:80px;
+	}
+.main img{
+	width:480px;
+	height:600px;
+	margin-bottom:40px;
+	}
+
+
+/*G500-video*/
+#video{
+	width:1024px;
+	margin:150px auto 0;
+}
+#video p{
+	font-size: 22px;
+	color: #666;
+	margin: 35px 0;
+}
+#video li{
+	width: 290px;
+	margin: 10px;
+	margin-left: 35px;
+	float:left;
+	list-style-type: none;
+}
+
+.djc img{
+	box-shadow: 3px 3px 25px #cacaca;
+	-webkit-box-shadow:3px 3px 25px #cacaca;
+	border-radius: 10px;
+	-webkit-border-radius:10px;
+	-moz-border-radius:10px;
+}
+.djc:hover{
+	cursor: pointer;
+
+}
+#video_title{
+	width: 290px;
+	display: inline-block;
+	font-size: 16px;
+	color: #666;
+	line-height: 60px;
+	text-align: center;
+}
